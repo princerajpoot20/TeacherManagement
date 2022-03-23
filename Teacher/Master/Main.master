@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Master_Main" %>
+
+<!DOCTYPE html>
+
+<html >
+<head runat="server">
+     <title>Teacher Management </title>
+    <!-- META TAGS -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CJosefin+Sans:600,700" rel="stylesheet" />
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <!-- ALL CSS FILES -->
+    <link href="../css/materialize.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/style-mob.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        .container-fluid
+        {
+            padding-right: 0px!important;
+            padding-left: 0px!important;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <!--== MAIN CONTRAINER ==-->
+    <div class="container-fluid sb1">
+        <div class="row">
+            <!--== LOGO ==-->
+            <div class="col-md-2 col-sm-6 col-xs-6 sb1-1">
+                <a href="#" class="btn-close-menu"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="#" class="atab-menu"><i class="fa fa-bars tab-menu" aria-hidden="true"></i></a>
+                <a href="../Admin/index.aspx" class="logo"><img src="images/logo.png" alt="" style ="width:1000%" />
+                </a>
+            </div>
+         
+            <div class="col-md-10 col-sm-6 col-xs-6">
+                <!-- Dropdown Trigger -->
+                <a class='waves-effect dropdown-button top-user-pro' href='#' data-activates='top-menu'><b> <asp:Label ID="lblAdminUser" runat="server" Text="" Font-Size="15px" ForeColor="Wheat"></asp:Label></b>  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+
+                <!-- Dropdown Structure -->
+                <ul id='top-menu' class='dropdown-content top-menu-sty'>
+                    <li><a href="../Utilities/Profile.aspx" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Profile Setting</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <asp:LinkButton ID="btnLogout1" runat="server" CssClass="ho-dr-con-last waves-effect" OnClick="btnLogout_Click"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</asp:LinkButton>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--== BODY CONTNAINER ==-->
+    <div class="container-fluid sb2">
+            <div class="row">
+                <div class="sb2-1">
+                    <!--== USER INFO ==-->
+                    <div class="sb2-12">
+                        <ul>
+                            <li>
+                                <img src="../images/placeholder.jpg" alt="" />
+                            </li>
+                            <li>
+                                <h6>
+                                  <b> <asp:Label ID="LbluserName" runat="server" Text="" Font-Size="15px" ForeColor="Wheat"></asp:Label></b> 
+                                   </h6>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!--== LEFT MENU ==-->
+                    <div class="sb2-13">
+                        <ul class="collapsible" data-collapsible="accordion">
+                             <asp:Panel ID="PanelUser" runat="server" Visible="false">
+                            <li><a href="../User/index.aspx" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i>Dashboard</a>
+                            </li>
+                            <li><a href="../Utilities/Profile.aspx"><i class="fa fa-cogs" aria-hidden="true"></i>My Profile</a>
+                            </li>
+                           </asp:Panel>
+                            <asp:Panel ID="PanelAdmin" runat="server" Visible="false">
+                                <li><a href="../Admin/index.aspx" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i>Dashboard</a>
+                                </li>
+                                <li><a href="../Utilities/Profile.aspx"><i class="fa fa-cogs" aria-hidden="true"></i>My Profile</a>
+                                </li>
+                                <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-book" aria-hidden="true"></i>Subject</a>
+                                    <div class="left-sub-menu">
+                                        <ul>
+                                            <li><a href="../Admin/Subject.aspx">All Subject</a>
+                                            </li>
+                                            <li><a href="../Admin/AddSubject.aspx">Add Subject</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-book" aria-hidden="true"></i>School</a>
+                                    <div class="left-sub-menu">
+                                        <ul>
+                                            <li><a href="../Admin/School.aspx">All School</a>
+                                            </li>
+                                            <li><a href="../Admin/AddSchool.aspx">Add School</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-user" aria-hidden="true"></i>Register Teacher</a>
+                                    <div class="left-sub-menu">
+                                        <ul>
+                                            <li><a href="../Admin/Teacher.aspx">All Teacher</a>
+                                            </li>
+                                            <li><a href="../Admin/AddTeacher.aspx">Add Teacher</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bookmark-o" aria-hidden="true"></i>Reports</a>
+                                    <div class=" left-sub-menu">
+                                        <ul>
+                                            <li><a href="../Admin/Reports.aspx">Between Date Reports</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </asp:Panel>
+                            
+                            <li><a href="../Utilities/changePassword.aspx"><i class="fa fa-image" aria-hidden="true"></i>Change Password</a>
+                            </li>
+
+                            <li>
+                                <asp:LinkButton ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" ><i class="fa fa-image" aria-hidden="true"></i>Logout</asp:LinkButton>
+                                
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!--== BODY INNER CONTAINER ==-->
+                <div class="sb2-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+        </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script src="../js/main.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/custom.js"></script>
+
+    </form>
+</body>
+</html>

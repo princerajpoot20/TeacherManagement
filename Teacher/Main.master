@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html >
+<head runat="server">
+      <title>Welcome-  </title>
+    <!-- META TAGS -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CJosefin+Sans:600,700" rel="stylesheet" />
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- ALL CSS FILES -->
+    <link href="css/materialize.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+    <link href="css/style-mob.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+    <!-- MOBILE MENU -->
+    <section>
+        <div class="ed-mob-menu">
+            <div class="ed-mob-menu-con">
+                <div class="ed-mm-left">
+                    <div class="wed-logo">
+                        <a href="index.aspx"><img src="images/logo.png" alt="" />
+						</a>
+                    </div>
+                </div>
+                <div class="ed-mm-right">
+                    <div class="ed-mm-menu">
+                        <a href="#!" class="ed-micon"><i class="fa fa-bars"></i></a>
+                        <div class="ed-mm-inn">
+                            <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
+                             <h4>User Account</h4>
+                            <ul>
+                                <li><a href="Signin.aspx">Sign In</a></li>
+                                <li><a href="SignUp.aspx">Register</a></li>
+                            </ul>
+                            <h4>All Pages</h4>
+                            <ul>
+                                <li><a href="index.aspx"> <i class="fa fa-home" aria-hidden="true"></i> Home</a></li>                          
+                                <li><a href="Contact.aspx">Contact us</a></li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--HEADER SECTION-->
+    <section>
+        <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ed-com-t1-left">
+                            <ul>
+                                <li><a href="mailto:xyz@yourdomain.com">Contact: 211B224@juetguna.in </a>
+                                </li>
+                                <li><a href="#">0000000000</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                            <a href="index.aspx"><img src="images/logo.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index.aspx"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                                </li>
+                                                                
+                                <li><a href="Contact.aspx">Contact us</a>
+                                </li>
+
+                                <li class="Signin">
+                                    <a href="Signin.aspx" class="mm-arr">Signin</a>
+                                   
+                                </li>
+                                <li class="Signup">
+                                    <a href="Signup.aspx" class="mm-arr">Signup</a>
+                                   
+                                </li>
+
+                                 <li class="pull-right"><a href="AdminLogin.aspx">Admin Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="all-drop-down-menu">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="search-top">
+             
+        </div>
+        
+    </section>
+    
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+   
+          <!--SECTION START-->
+    <section>
+        <div class="full-bot-book">
+            <div class="container">
+                <div class="row">
+                    <div class="bot-book">
+                        
+                            
+                        </div>
+                        <div class="col-md-7 bb-text">
+                            <h4>Thank you</h4>
+                            <p></p>
+                     
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION END-->
+
+
+    <!-- COPY RIGHTS -->
+    <section class="wed-rights">
+        <div class="container">
+            <div class="row">
+                <div class="right">Teachers Management. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
+    
+
+    <!-- SOCIAL MEDIA SHARE -->
+
+
+    <!--Import jQuery before materialize.js-->
+    <script src="js/main.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+  
+    </form>
+</body>
+</html>
