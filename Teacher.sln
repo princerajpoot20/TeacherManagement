@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TRMS", "TRMS\", "{F6A6F588-C56E-400F-A93F-17AA8D6C3A1D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58859"
+		Debug.AspNetCompiler.PhysicalPath = "TRMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58859\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58859"
+		Release.AspNetCompiler.PhysicalPath = "TRMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58859\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58859"
+		SlnRelativePath = "TRMS\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6A6F588-C56E-400F-A93F-17AA8D6C3A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A6F588-C56E-400F-A93F-17AA8D6C3A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA380F9F-F19D-48A0-AE53-FB88830704F7}
+	EndGlobalSection
+EndGlobal
